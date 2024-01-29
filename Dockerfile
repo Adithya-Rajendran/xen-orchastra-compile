@@ -1,4 +1,4 @@
-FROM debian:12
+FROM debian:latest
 RUN apt-get update && apt-get install git
 RUN git clone https://github.com/ronivay/XenOrchestraInstallerUpdater.git
 # COPY certs/xo.pem /cert.pem
