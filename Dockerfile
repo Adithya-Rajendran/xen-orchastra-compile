@@ -4,4 +4,5 @@ RUN git clone https://github.com/ronivay/XenOrchestraInstallerUpdater.git /XenOr
 WORKDIR /XenOrchestraInstallerUpdater
 RUN cp sample.xo-install.cfg xo-install.cfg
 EXPOSE 80
+RUN chmod +x xo-install.sh
 RUN ./xo-install.sh --install
