@@ -31,4 +31,4 @@ WORKDIR /app/xen-orchestra/packages/xo-server
 EXPOSE 80
 
 # Start XO server
-CMD ["yarn", "start"]
+CMD redis-server --daemonize yes && yarn start
