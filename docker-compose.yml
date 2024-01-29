@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  xo-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: xo-server
+    ports:
+      - "8123:80"
