@@ -1,7 +1,7 @@
 FROM debian:latest
 
 # Install dependencies
-RUN apt-get update && apt-get install -y build-essential redis-server libpng-dev git python3-minimal libvhdi-utils lvm2 cifs-utils nfs-common ntfs-3g
+RUN apt-get update && apt-get install -y build-essential redis-server libpng-dev git python3-minimal libvhdi-utils lvm2 cifs-utils nfs-common ntfs-3g curl npm
 
 # Install node.js and yarn
 RUN curl -fsSL https://deb.nodesource.com/setup_21.x | bash - &&\
