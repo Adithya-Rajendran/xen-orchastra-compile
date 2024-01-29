@@ -26,6 +26,8 @@ RUN cd packages/xo-server && \
     mkdir -p ~/.config/xo-server && \
     cp sample.config.toml ~/.config/xo-server/config.toml
 
+WORKDIR /app/xen-orchestra/packages/xo-server
+
 EXPOSE 80
 
 # Start XO server
